@@ -3,6 +3,8 @@ import json
 import time
 from datetime import datetime, timezone
 
+from health_server import start_health_server
+
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -853,4 +855,5 @@ def main():
 
 
 if __name__ == "__main__":
+    start_health_server()
     main()
